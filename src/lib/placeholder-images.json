@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-funeral",
+      "description": "Solemn and respectful atmosphere with soft lighting",
+      "imageUrl": "https://picsum.photos/seed/funeralhero/1920/1080",
+      "imageHint": "funeral solemn"
+    },
+    {
+      "id": "service-cremation",
+      "description": "Symbolic representation of peace and memory",
+      "imageUrl": "https://picsum.photos/seed/cremation/600/400",
+      "imageHint": "memory peace"
+    },
+    {
+      "id": "service-transport",
+      "description": "Professional funeral transport service",
+      "imageUrl": "https://picsum.photos/seed/hearse/600/400",
+      "imageHint": "funeral transport"
+    },
+    {
+      "id": "service-flowers",
+      "description": "Elegant floral arrangements for funeral",
+      "imageUrl": "https://picsum.photos/seed/flowers/600/400",
+      "imageHint": "funeral flowers"
+    },
+    {
+      "id": "service-admin",
+      "description": "Supportive and professional administrative assistance",
+      "imageUrl": "https://picsum.photos/seed/assistance/600/400",
+      "imageHint": "support help"
+    }
+  ]
 }
