@@ -47,7 +47,7 @@ export function AIAssistant() {
   };
 
   return (
-    <div className="fixed bottom-6 left-6 z-50">
+    <div className="fixed bottom-[88px] right-6 sm:bottom-[88px] z-50">
       {isOpen ? (
         <Card className="w-80 sm:w-96 shadow-2xl border-slate-200 animate-in slide-in-from-bottom-5">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-3 bg-slate-900 text-white rounded-t-lg">
@@ -96,12 +96,20 @@ export function AIAssistant() {
           </CardFooter>
         </Card>
       ) : (
-        <Button
-          onClick={() => setIsOpen(true)}
-          className="h-14 w-14 rounded-full bg-slate-900 text-white shadow-2xl hover:bg-slate-800 transition-transform hover:scale-110"
-        >
-          <MessageSquare className="h-6 w-6" />
-        </Button>
+        <div className="flex items-center gap-3 animate-fade-in-slow">
+          <div className="bg-white px-4 py-2 rounded-full shadow-lg border border-border/50 text-sm font-bold text-slate-800 animate-pulse relative">
+            <span className="hidden sm:inline">Assistente Virtuale</span>
+            <span className="sm:hidden">Supporto</span>
+            {/* Triangolino che punta verso destra */}
+            <div className="absolute right-[-6px] top-1/2 -translate-y-1/2 w-0 h-0 border-t-[6px] border-t-transparent border-l-[6px] border-l-white border-b-[6px] border-b-transparent"></div>
+          </div>
+          <Button
+            onClick={() => setIsOpen(true)}
+            className="h-14 w-14 rounded-full bg-slate-900 text-white shadow-2xl hover:bg-slate-800 transition-transform hover:scale-110 flex-shrink-0"
+          >
+            <MessageSquare className="h-6 w-6" />
+          </Button>
+        </div>
       )}
     </div>
   );
