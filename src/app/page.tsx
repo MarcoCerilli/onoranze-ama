@@ -144,7 +144,7 @@ export default function Home() {
           </div>
 
           <div className="max-w-5xl mx-auto bg-card rounded-xl border border-border shadow-2xl overflow-hidden p-8 md:p-12">
-            <div className="grid grid-cols-2 gap-8 md:gap-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
               {/* Left Column: Altre Agenzie */}
               <div className="space-y-12">
                 <h3 className="text-xl md:text-2xl font-headline font-semibold text-foreground/50 text-center uppercase tracking-widest pb-4 border-b border-border/50">

@@ -58,7 +58,7 @@ export function Header() {
 
       {/* Mobile Navigation Dropdown */}
       {isMenuOpen && (
-        <div className="lg:hidden absolute top-28 left-0 w-full bg-background border-b border-border shadow-xl py-4 flex flex-col items-center gap-6 animate-fade-in-slow">
+        <div className="lg:hidden absolute top-full left-0 w-full bg-background border-b border-border shadow-xl py-4 flex flex-col items-center gap-6 animate-fade-in-slow">
           <Link href="/filosofia" className="text-foreground/90 font-medium hover:text-primary text-lg" onClick={() => setIsMenuOpen(false)}>La Nostra Filosofia</Link>
           <Link href="/servizi" className="text-foreground/90 font-medium hover:text-primary text-lg" onClick={() => setIsMenuOpen(false)}>Servizi</Link>
           <Link href="/necrologi" className="text-foreground/90 font-medium hover:text-primary text-lg" onClick={() => setIsMenuOpen(false)}>Necrologi</Link>
