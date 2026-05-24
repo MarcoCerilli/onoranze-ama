@@ -1,4 +1,4 @@
-import { MessageCircle } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 
 export function WhatsAppButton() {
@@ -7,7 +7,7 @@ export function WhatsAppButton() {
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
   return (
-    <div className="fixed bottom-[100px] right-6 sm:bottom-6 z-50 animate-fade-in-slow flex items-center gap-3">
+    <div className="fixed bottom-6 right-6 z-50 animate-fade-in-slow flex items-center gap-3">
       <div className="bg-white px-4 py-2 rounded-full shadow-lg border border-border/50 text-sm font-bold text-slate-800 animate-pulse relative">
         <span className="hidden sm:inline">Assistenza H24</span>
         <span className="sm:hidden">Scrivici</span>
@@ -20,7 +20,7 @@ export function WhatsAppButton() {
         rel="noopener noreferrer"
         className="group relative flex items-center justify-center h-14 w-14 rounded-full bg-green-600 text-white shadow-2xl transition-transform hover:scale-110 active:scale-95"
       >
-        <MessageCircle className="h-7 w-7" />
+        <FaWhatsapp className="h-8 w-8" />
         <span className="absolute -top-1 -right-1 flex h-4 w-4">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
           <span className="relative inline-flex rounded-full h-4 w-4 bg-red-500 border-2 border-white"></span>

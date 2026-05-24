@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { MessageSquare, X, Send, Bot } from "lucide-react";
+import { FaDove } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -47,12 +48,12 @@ export function AIAssistant() {
   };
 
   return (
-    <div className="fixed bottom-[88px] right-6 sm:bottom-[88px] z-50">
+    <div className="fixed bottom-[96px] right-6 z-50">
       {isOpen ? (
         <Card className="w-80 sm:w-96 shadow-2xl border-slate-200 animate-in slide-in-from-bottom-5">
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-3 bg-slate-900 text-white rounded-t-lg">
             <div className="flex items-center gap-2">
-              <Bot className="h-5 w-5 text-amber-400" />
+              <FaDove className="h-5 w-5 text-amber-400" />
               <CardTitle className="text-sm font-headline">Assistente Eternità</CardTitle>
             </div>
             <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)} className="text-white hover:bg-slate-800 h-8 w-8">
@@ -107,7 +108,7 @@ export function AIAssistant() {
             onClick={() => setIsOpen(true)}
             className="h-14 w-14 rounded-full bg-slate-900 text-white shadow-2xl hover:bg-slate-800 transition-transform hover:scale-110 flex-shrink-0"
           >
-            <MessageSquare className="h-6 w-6" />
+            <FaDove className="h-6 w-6" />
           </Button>
         </div>
       )}
