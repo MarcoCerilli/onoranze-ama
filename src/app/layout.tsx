@@ -5,6 +5,7 @@ import { AIAssistant } from '@/components/ui/ai-assistant';
 import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { CookieBanner } from '@/components/ui/cookie-banner';
 export const metadata: Metadata = {
   title: 'Eternità Onoranze | Onoranze Funebri Terracina e Latina',
   description: 'Eternità Onoranze Funebri offre servizi professionali e discreti a Terracina, Latina e provincia. Assistenza h24, cremazione, trasporti e disbrigo pratiche.',
@@ -30,6 +31,7 @@ export default function RootLayout({
         <Footer />
         <WhatsAppButton />
         <AIAssistant />
+        <CookieBanner />
         <Toaster />
       </body>
     </html>

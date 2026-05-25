@@ -100,11 +100,11 @@ export default function Home() {
           <p className="text-lg text-foreground/80 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
             Basata sulla visione, l'educazione e un'etica del rispetto profondo.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-secondary hover:bg-secondary/80 text-white font-semibold rounded-none px-10 transition-all">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-[280px] sm:max-w-none mx-auto">
+            <Button size="lg" className="w-full sm:w-auto bg-secondary hover:bg-secondary/80 text-white font-semibold rounded-none px-8 sm:px-10 transition-all">
               I Nostri Servizi
             </Button>
-            <Button size="lg" variant="outline" className="text-primary border-primary hover:bg-primary/10 rounded-none px-10">
+            <Button size="lg" variant="outline" className="w-full sm:w-auto text-primary border-primary hover:bg-primary/10 rounded-none px-8 sm:px-10">
               Contattaci Ora
             </Button>
           </div>
@@ -318,8 +318,9 @@ export default function Home() {
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <label className="text-xs uppercase font-bold text-foreground/50">Nome Completo</label>
+                      <label htmlFor="name" className="text-xs uppercase font-bold text-foreground/50">Nome Completo</label>
                       <Input
+                        id="name"
                         required
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -327,8 +328,9 @@ export default function Home() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <label className="text-xs uppercase font-bold text-foreground/50">Telefono</label>
+                      <label htmlFor="phone" className="text-xs uppercase font-bold text-foreground/50">Telefono</label>
                       <Input
+                        id="phone"
                         required
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -337,8 +339,9 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="space-y-2">
-                    <label className="text-xs uppercase font-bold text-foreground/50">Email</label>
+                    <label htmlFor="email" className="text-xs uppercase font-bold text-foreground/50">Email</label>
                     <Input
+                      id="email"
                       type="email"
                       required
                       value={formData.email}
@@ -347,8 +350,9 @@ export default function Home() {
                     />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-xs uppercase font-bold text-foreground/50">Messaggio</label>
+                    <label htmlFor="message" className="text-xs uppercase font-bold text-foreground/50">Messaggio</label>
                     <Textarea
+                      id="message"
                       required
                       rows={5}
                       value={formData.message}
